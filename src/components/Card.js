@@ -9,8 +9,8 @@ const Card = ({ ticket, name }) => {
     const colors = ["#f94144", "#f3722c", "#f8961e", "#f9844a", "#90be6d", "#43aa8b", "#577590"];
     return colors[Math.floor(Math.random() * colors.length)];
   };
-  const u = title.split(" ").map((value) => value.charAt(0)).join("").toUpperCase()
-
+  const u = name.split(" ").map((value) => value.charAt(0)).join("").toUpperCase()
+ 
   return (
     <div className="card">
       <div className="card-header">
