@@ -1,0 +1,33 @@
+.column {
+    background: #e6eef5;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 8px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+  }
+  .column-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #header-comp{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .column-title {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .column-content {
+    display: flex;
+    flex-direction: column;
+  }
+  

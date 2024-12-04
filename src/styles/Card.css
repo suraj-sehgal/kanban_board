@@ -1,0 +1,64 @@
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-top: 8px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.card-id {
+  font-size: 12px;
+  color: #a3a2a2;
+  background: #f1f1f1;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.card-title {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.card-tag {
+  font-size: 12px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(128, 128, 128);
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-align: left;
+  display: flex;
+  gap: 10px;
+}
+
+#dot {
+  justify-self: center;
+  padding: 5px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
