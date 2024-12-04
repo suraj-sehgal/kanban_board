@@ -4,7 +4,7 @@ import Card from "./Card";
 import "./../styles/Column.css";
 
 const Column = ({ title, order, tickets,users }) => {
-    if(order=="user"){
+    if(order==="user"){
         const user = users.find((user) => user.id === title);
         title=user.name;
     }
