@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Column from "./Column";
 import "./../styles/KanbanBoard.css";
 
 const KanbanBoard = ({ data ,users}) => {
   const [grouping, setGrouping] = useState("priority"); // Default grouping
-
+  useEffect(()=>{
+    const group = localStorage.getItem('grouping');
+    if(group){
+        setGrouping(group);
+      }
+  },[])
   const groupTickets = () => {
     if (grouping === "priority") {
         // Group tickets by priority
@@ -44,7 +49,9 @@ const KanbanBoard = ({ data ,users}) => {
         <select
           className="grouping-select"
           value={grouping}
-          onChange={(e) => setGrouping(e.target.value)}
+          onChange={(e) => {setGrouping(e.target.value)
+            localStorage.setItem('grouping', e.target.value);
+          }}
         >
           <option value="priority">Priority</option>
           <option value="status">Status</option>
